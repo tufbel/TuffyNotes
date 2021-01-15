@@ -29,3 +29,7 @@
 **Git**
 
 丨——  [Git基本使用](https://github.com/tufbel/TuffyNotes/blob/github/Git/Git使用.md)
+
+**Python**
+
+丨—— [uWSGI](https://github.com/tufbel/TuffyNotes/blob/github/python/uWSGI.md)
