@@ -6,22 +6,26 @@
 
 # 导航
 
-[PicGo图床搭建](https://github.com/tufbel/TuffyNotes/blob/main/PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.md)
+[PicGo图床搭建](https://github.com/tufbel/TuffyNotes/blob/github/PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.md)
 
 **Linux使用与软件安装**
 
-- [基本使用](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/基本使用.md)
-- [gcc](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/gcc.md)
-- [Nginx](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/Nginx.md)
-- [Redis](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/Redis.md)
-- [SELinux的安全加固](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/SELinux的安全加固.md)
+丨—— [基本使用](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/基本使用.md)
+
+丨—— [gcc](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/gcc.md)
+
+丨—— [Nginx](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/Nginx.md)
+
+丨—— [Redis](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/Redis.md)
+
+丨—— [SELinux的安全加固](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/SELinux的安全加固.md)
 
 **IDE**
 
-​	**Python**
+丨——**Python**
 
-- [Pycharm远程开发](https://github.com/tufbel/TuffyNotes/blob/main/IDE/Python/PyCharm远程开发.md)		
+丨—— 丨—— [Pycharm远程开发](https://github.com/tufbel/TuffyNotes/blob/github/IDE/Python/PyCharm远程开发.md)		
 
 **Git**
 
-- [Git基本使用](https://github.com/tufbel/TuffyNotes/blob/main/Git/Git使用.md)
+丨——  [Git基本使用](https://github.com/tufbel/TuffyNotes/blob/github/Git/Git使用.md)
