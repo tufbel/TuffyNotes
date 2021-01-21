@@ -25,7 +25,7 @@ yum list all |grep -i [name] # 搜索yum可安装的包
 
 如果使用`yum repolist`命令可以看到`centos-sclo-rh`与`centos-sclo-sclo`源则可以正常安装`scl`与`gcc`，否则需要进行换源处理。
 
-<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/Snipaste_2021-01-12_12-27-10.png" alt="yum repolist列表" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/Snipaste_2021-01-12_12-27-10.png" alt="yum repolist列表" style="zoom:67%;" />
 
 ## 2.2 管理gcc版本
 

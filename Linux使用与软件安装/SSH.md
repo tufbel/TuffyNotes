@@ -62,7 +62,7 @@ ssh-copy-id [-i identity_file] -p port user@hostname # ssh-copy-id命令在w10�
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-![authorized_keys权限](https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210121091617.png)
+![authorized_keys权限](https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210121091617.png)
 
 ## 3 启动
 

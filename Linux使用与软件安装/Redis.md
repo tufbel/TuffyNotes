@@ -107,7 +107,7 @@ redis-server /etc/redis/redis.conf # 运行redis
 
 然后使用**Ctrl+z**快捷键将redis切换到后台运行，此时任务会暂停，`jobs -l`查看任务的编号，然后通过`bg number`恢复redis的运行，`number`值是通过`jobs`命令搜索到的编号。
 
-<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/image-20210112163113375.png" alt="redis运行" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/image-20210112163113375.png" alt="redis运行" style="zoom:67%;" />
 
 #### 连接与关闭
 
