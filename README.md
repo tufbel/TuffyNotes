@@ -4,6 +4,8 @@
 
 有些地方描述可能存在问题，因为这只是个人理解。
 
+若图片无法正常查看，可访问[Gitee项目](https://gitee.com/Lumoonc/tuffynotes)。
+
 # 导航
 
 [PicGo图床搭建](https://github.com/tufbel/TuffyNotes/blob/github/PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.md)
