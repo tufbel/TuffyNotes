@@ -4,7 +4,7 @@
 
 首先从PicGo的[github仓库](https://github.com/Molunerfinn/PicGo)中下载并安装PicGo。
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/Snipaste_2021-01-11_16-43-14.png" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/Snipaste_2021-01-11_16-43-14.png" style="zoom:50%;" />
 
 > 上图中有个链接格式，一般推荐选择URL格式，它的作用是在图片上传完成后，将图片的url按照你选择的格式复制到剪贴板。
 
@@ -20,13 +20,13 @@ PicGo还有很多扩展插件，可在[GitHub仓库](https://github.com/PicGo/Aw
 
 在Github账户的用户个人设置中`Settings/Developer settings/Personal access tokens`点击右侧`Generate new token`按钮创建一个Token。
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210111170221.png" alt="创建Token" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210111170221.png" alt="创建Token" style="zoom:80%;" />
 
 给改Token添加说明，方便以后使用，而且其作为一个图片仓库的Token，不用分配过多权限，下面只勾选`repo`即可：
 
 > 注意：创建完成后会出现一个Token，但是它只在创建时显示一次，所以一定要记住，提前复制。
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210111170529.png" alt="创建token" style="zoom: 50%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210111170529.png" alt="创建token" style="zoom: 50%;" />
 
 ## 3 配置PicGo
 
@@ -34,7 +34,7 @@ PicGo还有很多扩展插件，可在[GitHub仓库](https://github.com/PicGo/Aw
 
 在PicGo的图床设置中找到GitHub图床，并将其设置为默认图床：
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210111171218.png" alt="github图床设置" style="zoom: 80%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210111171218.png" alt="github图床设置" style="zoom: 80%;" />
 
 点击确认完成设置。
 
@@ -65,7 +65,7 @@ PicGo有个快捷上传，通过按下快捷键能直接将剪贴板中的图片
 
 打开Typora的偏好设置在图像中进行设置（[官方说明](https://support.typora.io/Upload-Image/#picgoapp-chinese-language-only)）：
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210111172703.png" alt="Typora设置" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210111172703.png" alt="Typora设置" style="zoom:80%;" />
 
 选择`上传图片`，勾选`对本地位置图片应用上述规则`，然后在上传服务中配置PicGo即可（要配置PicGo(app)而不是PicGo-Core）。
 

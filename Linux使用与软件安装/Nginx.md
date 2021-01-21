@@ -171,11 +171,11 @@ ps [PID] # 查看进程详情
 
 在具有SELinux的系统上，如果随意更换端口，Nginx的启动会失败，这是因为SELinux限制Nginx只能选择那些被标记为`http_port_t`的端口启动：
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/Snipaste_2021-01-07_12-12-15.png" alt="启动失败" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/Snipaste_2021-01-07_12-12-15.png" alt="启动失败" style="zoom:80%;" />
 
 按照提示，使用`journalctl -xe`命令查看错误信息（vim使用 G 移动到底部）：
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/Snipaste_2021-01-07_12-09-36.png" alt="错误提示" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/Snipaste_2021-01-07_12-09-36.png" alt="错误提示" style="zoom:67%;" />
 
 其提示让使用`semanage port -a -t PORT_TYPE -p tcp 21300`命令标记21300端口类型。
 
@@ -186,7 +186,7 @@ semanage port -a -t http_port_t -p tcp 21300  # 设置21300端口类型为http_p
 semanage port -l | grep http_port_t # 查看http_port_t类型的端口
 ```
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210113170505.png" alt="设置效果" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210113170505.png" alt="设置效果" style="zoom:80%;" />
 
 设置完成后效果如图，只后再运行Nginx启动命令即可。
 
@@ -206,7 +206,7 @@ setenforce 0  # 临时关闭SELinux(实际设置为宽容模式)
 
 # 3 配置Nginx
 
-<img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/Snipaste_2021-01-07_14-18-45.png" alt="Nginx分层图" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/Snipaste_2021-01-07_14-18-45.png" alt="Nginx分层图" style="zoom:67%;" />
 
 Nginx的配置文件一般包括全局块、events块、http块、server块和location块。
 

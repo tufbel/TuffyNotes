@@ -56,6 +56,14 @@ Win系统会在`C:\Users\username\.ssh`中生成文件夹中，Linux系统生成
 ssh-copy-id [-i identity_file] -p port user@hostname # ssh-copy-id命令在w10系统下没用的，但是Git bash中有。另外，如果想手动把秘钥复制到authorized_keys文件中，可以使用-i参数，identity_file代表本地秘钥复制到远程机中的文件位置。
 ```
 
+连接到远程机器，然后可以查看`~/.ssh/authorized_keys`文件的权限为600（root用户与非root用户改文件权限一致）。所以，如果是自己创建`authotized_keys`文件的话也要控制其权限为600，否则ssh是无法使用的，可以使用`chmod`命令：
+
+```shell
+chmod 600 ~/.ssh/authorized_keys
+```
+
+![authorized_keys权限](https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/20210121091617.png)
+
 ## 3 启动
 
 ### 3.1 启动方式

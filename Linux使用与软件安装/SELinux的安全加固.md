@@ -40,7 +40,7 @@ setenforce [0|1] # 0代表permissive宽容模式，1代表enforcing强制模式
 
 使用`sestatus`命令能看到完整的SELinux的运行状态与模式等相关参数：
 
-![SELinux运行状态查看](https://raw.githubusercontent.com/tufbel/TImages/main/mark/Snipaste_2021-01-13_09-44-42.png)
+![SELinux运行状态查看](https://cdn.jsdelivr.net/gh/tufbel/TImages/mark/Snipaste_2021-01-13_09-44-42.png)
 
 可以通过`status`与`mode`行看到运行状态与当前运行模式。
 
