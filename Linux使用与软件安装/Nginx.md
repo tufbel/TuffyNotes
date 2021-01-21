@@ -236,12 +236,14 @@ Nginx配置文件包括`/etc/nginx/nginx.conf`与`/etc/nginx/conf.d/*.conf`。
 user  root; 
 # 工作进程数量
 worker_processes  1;
-worker_rlimit_nofile 1024; # 工作进程打开文件的最大数量，一般为 (ulimit -n)/工作进程数。但是有时候Nginx的分配也不是那么均匀。
+worker_rlimit_nofile 65535; # 工作进程打开文件的最大数量，一般为 (ulimit -n)/工作进程数。但是有时候Nginx的分配也不是那么均匀。
 worker_cpu_affinity 0001 0010 0100 1000; # 用于给每个工作进程绑定单独的cpu，只设置一个工作进程时候可以不设置此选项
 
 error_log  /var/log/nginx/error.log warn; # 错误日志位置与保存级别
 pid        /var/run/nginx.pid; # 主进程pid的存放位置
 ```
+
+> 注意，`ulimit -n`查看到数值一般为1024，这个是默认值，对Nginx来说一般是不够用的，所以需要手动修改文件句柄数量。
 
 ### 3.1.2 events块配置
 
@@ -252,7 +254,7 @@ events {
   # 事件驱动模型（只能在Linux上使用），select|poll|kqueue|epoll|resig|/dev/poll|eventport
 	 use epoll; # 使用epoll事件驱动，因为epoll的性能相比其他事件驱动要好很多，可以不设置，因为Nginx默认使用最有效的。
   # 设置单个工作进程允许的最大连接数量，次数字不能大于当前操作系统支持的最大文件句柄数，可以使用ulimit -n 命令查看操作系统支持的最大句柄数。
-  worker_connections 1024; 
+  worker_connections 65535; 
 }
 ```
 

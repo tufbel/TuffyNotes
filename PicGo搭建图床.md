@@ -48,8 +48,13 @@ PicGo还有很多扩展插件，可在[GitHub仓库](https://github.com/PicGo/Aw
 
 - 设置自定义域名：通过自定义域名，来借用`jsdelivr`这个免费开源的CDN进行图片的加速，格式如下：
 
-  ```
-  https://cdn.jsdelivr.net/gh/user/repo
+  ```shell
+  https://cdn.jsdelivr.net/gh/user/repo # CDN加速
+  https://raw.githubusercontent.com/user/repo/branch # GitHub原始域名
+  
+  eg:
+  https://raw.githubusercontent.com/tufbel/TImages/main
+  https://cdn.jsdelivr.net/gh/tufbel/TImages
   ```
 
 ### 3.2 剪贴板上传
