@@ -14,6 +14,8 @@
 
 丨—— [gcc](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/Linux使用与软件安装/gcc.md)
 
+丨—— [MySQL](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/Linux使用与软件安装/MySQL.md)
+
 丨—— [Nginx](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/Linux使用与软件安装/Nginx.md)
 
 丨—— [Redis](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/Linux使用与软件安装/Redis.md)
@@ -33,6 +35,8 @@
 丨——  [Git基本使用](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/Git/Git使用.md)
 
 **Python**
+
+丨—— [基本使用(conda & pip)](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/python/基本使用(conda & pip).md)
 
 丨—— [OpenCV](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/python/OpenCV.md)
 
