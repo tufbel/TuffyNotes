@@ -26,7 +26,7 @@ apt install redis-server
 
 ```shell
 wget https://download.redis.io/releases/redis-6.0.9.tar.gz # 以6.0.9版本为例，可按需更换
-tar xzf redis-6.0.9.tar.gz  # 解压 注意：此处解压位置即为redis的安装位置，建议`/usr/loacl/`目录
+tar xzf redis-6.0.9.tar.gz [-C /usr/loacl/]  # 解压 注意：此处解压位置即为redis的安装位置，建议`/usr/loacl/`目录
 cd redis-6.0.9 # 进入解压的目录
 ```
 
@@ -127,7 +127,7 @@ redis-cli shutdown  # 停止redis-server服务
 > 重要配置一定要设置
 
 ```shell
-requirepass [password] # 访问密码限制，默认被注释，无需密码
+requirepass [password] # 访问密码限制，默认被注释，无需密码，bind设置为127.0.0.1时密码是不生效的。
 bind 192.168.1.100 10.0.0.1 # 远程访问配置，只允许此处写的ip远程访问，如果为0.0.0.0代表允许任何ip远程访问
 port 6379 # 使用的端口号，默认6379 
 

@@ -16,6 +16,8 @@
 
 丨—— [gcc](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/gcc.md)
 
+丨—— [MySQL](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/MySQL.md)
+
 丨—— [Nginx](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/Nginx.md)
 
 丨—— [Redis](https://github.com/tufbel/TuffyNotes/blob/github/Linux使用与软件安装/Redis.md)
@@ -35,6 +37,7 @@
 丨——  [Git基本使用](https://github.com/tufbel/TuffyNotes/blob/github/Git/Git使用.md)
 
 **Python**
+丨—— [基本使用(conda & pip)](https://github.com/tufbel/TuffyNotes/blob/github/python/基本使用(conda & pip).md)
 
 丨—— [OpenCV](https://github.com/tufbel/TuffyNotes/blob/github/python/OpenCV.md)
 

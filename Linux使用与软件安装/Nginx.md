@@ -249,8 +249,8 @@ pid        /var/run/nginx.pid; # 主进程pid的存放位置
 
 ```shell
 events {
-		accept_mutex on; #优化同一时刻只有一个请求而避免多个睡眠进程被唤醒的设置(惊群现象：一个请求唤醒多个子进程)，on为防止被同时唤醒，默认为off，因此nginx刚安装完以后要进行适当的优化。
-  multi_accept on; # 设置每个进程可以同时接受多个网络连接，默认为off代表不能接受多个网络连接。
+	 accept_mutex on; #优化同一时刻只有一个请求而避免多个睡眠进程被唤醒的设置(惊群现象：一个请求唤醒多个子进程)，on为防止被同时唤醒，默认为off，因此nginx刚安装完以后要进行适当的优化。
+   multi_accept on; # 设置每个进程可以同时接受多个网络连接，默认为off代表不能接受多个网络连接。
   # 事件驱动模型（只能在Linux上使用），select|poll|kqueue|epoll|resig|/dev/poll|eventport
 	 use epoll; # 使用epoll事件驱动，因为epoll的性能相比其他事件驱动要好很多，可以不设置，因为Nginx默认使用最有效的。
   # 设置单个工作进程允许的最大连接数量，次数字不能大于当前操作系统支持的最大文件句柄数，可以使用ulimit -n 命令查看操作系统支持的最大句柄数。
