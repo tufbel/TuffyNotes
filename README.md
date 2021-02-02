@@ -37,8 +37,10 @@
 丨——  [Git基本使用](https://github.com/tufbel/TuffyNotes/blob/github/Git/Git使用.md)
 
 **Python**
-丨—— [基本使用(conda & pip)](https://github.com/tufbel/TuffyNotes/blob/github/python/基本使用(conda & pip).md)
+
+丨—— [基本使用_conda & pip](https://github.com/tufbel/TuffyNotes/blob/github/Python/基本使用_conda%20&%20pip.md)
 
 丨—— [OpenCV](https://github.com/tufbel/TuffyNotes/blob/github/python/OpenCV.md)
 
 丨—— [uWSGI](https://github.com/tufbel/TuffyNotes/blob/github/python/uWSGI.md)
+

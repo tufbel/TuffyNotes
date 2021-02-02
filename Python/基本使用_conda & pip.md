@@ -100,6 +100,52 @@ conda env create -f=py36.yaml # 创建
 2. 编辑`~/.bashrc`或`~/.bash_profile`等文件删除环境变量。
 3. 使用`rm -rf ~/.condarc ~/.conda ~/.continuum`删除相关目录。
 
+### 1.6 离线创建环境
+
+###### 打包环境
+
+首先找到一个已经创建好环境的机器（或者可联网的机器创建自己想要的环境），通过`conda env list`命令查看虚拟环境位置。
+
+```shell
+[root@master ~]# conda env list
+# conda environments:
+#
+base                  *  /data/sbin/miniconda3
+wisdom                   /data/sbin/miniconda3/envs/wisdom
+```
+
+现在以在离线机器安装`wisdom`环境为例：
+
+```shell
+tar cxvf wisdom.tar CONDAPATH/envs/wisdom  # MINICONDAPATH为conda安装路径，打包环境
+tar cxvf wisdom_pkgs.tar CONDAPATH/pkgs  # 打包依赖
+```
+
+###### 将打包好的环境复制到离线机器
+
+将两个压缩包复制到离线机器上，然后解压：
+
+```shell
+tar xzvf wisdom.tar -C TARPATH/conda-offline # TARPATH为解压路径，conda-offline文件夹记得提前创建
+tar xzvf wisdom_pkgs.tar -C TARPATH/conda-offline
+```
+
+###### 复制依赖
+
+将pkgs里的依赖包复制到`CONDAPATH/pkgs`中，否则创建环境安装依赖包会失败。
+
+```shell
+cp -ru TARPATH/conda-offline/pkgs/* CONDAPATH/pkgs
+```
+
+###### 离线创建虚拟环境
+
+使用命令离线创建环境即可：
+
+```shell
+conda create -n ENVNAME --clone TARPATH/conda-offline/wisdom --offline
+```
+
 ## 2 Pip
 
 ### 2.1 换源
