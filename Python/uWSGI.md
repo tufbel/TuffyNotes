@@ -17,14 +17,13 @@ chdir = %d/../
 ;http-socket = :21300
 ; socket监听队列的小，默认100
 listen = 120
-socket = myuwsgi.socket
+socket = myuwsgi.sock
 pidfile = uwsgi.pid
 ; 服务停止时自动清除socket和pid文件
 vacuum = true
 
 ; 允许主进程存在，并在工作进程中加载flask而非主进程中
 master = true
-lazy-apps = true
 workers = 1
 threads = 10
 ; 启用线程

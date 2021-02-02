@@ -36,7 +36,7 @@
 
 **Python**
 
-丨—— [基本使用(conda & pip)](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/python/基本使用(conda & pip).md)
+丨—— [基本使用_conda & pip](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/Python/基本使用_conda%20&%20pip.md)
 
 丨—— [OpenCV](https://gitee.com/Lumoonc/tuffynotes/blob/gitee/python/OpenCV.md)
 
