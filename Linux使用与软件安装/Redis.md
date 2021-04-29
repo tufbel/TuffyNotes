@@ -48,7 +48,7 @@ ln -s redis-6.0.9 redis  # 进入到/usr/local/目录并未redis-6.0.9文件夹�
 
 ```shell
 cd redis-6.0.9
-make # 编译安装
+make MALLOC=libc # 编译安装
 ```
 
 > 注意，make过程需要gcc版本大于5.3，有的Linux系统gcc版本为4.8.5，gcc的版本升级较为复杂，请自行查阅想过步骤。

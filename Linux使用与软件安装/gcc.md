@@ -17,7 +17,7 @@ gcc是Linux系统一个重要的工具，很多软件的安装、源码的编译
 > 注意：有时候会遇到找不到devtoolset-9-gcc的问题，这时候我们可能需要卸载epel，并更换yum源，对所有涉及的包进行重新安装即可。
 
 ```shell
-yum install centos-release-scl # 安装管理工具
+yum install centos-release-scl centos-release-scl-rh# 安装管理工具
 # 安装gcc 版本自行选择 建议使用第一条命令，安装过程中会遇到无公钥的情况，选择y安装即可，或是下面携带-y的参数
 yum install [-y] devtoolset-7-gcc*
 yum install devtoolset-7-gcc devtoolset-7-gcc-c++ devtoolset-7-binutils 
@@ -35,6 +35,7 @@ yum list all |grep -i [name] # 搜索yum可安装的包
 
 ```shell
 scl enable devtoolset-7 bash
+scl --list
 ```
 
 执行上述命令后，在你本次使用的bash中都将使用`devtoolset-7`的gcc，可以通过`gcc -v`命令查看版本是否切换成功。
