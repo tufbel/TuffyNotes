@@ -117,8 +117,8 @@ wisdom                   /data/sbin/miniconda3/envs/wisdom
 现在以在离线机器安装`wisdom`环境为例：
 
 ```shell
-tar cxvf wisdom.tar CONDAPATH/envs/wisdom  # MINICONDAPATH为conda安装路径，打包环境
-tar cxvf wisdom_pkgs.tar CONDAPATH/pkgs  # 打包依赖
+tar cvf wisdom.tar CONDAPATH/envs/wisdom  # MINICONDAPATH为conda安装路径，打包环境
+tar cvf wisdom_pkgs.tar CONDAPATH/pkgs  # 打包依赖
 ```
 
 ###### 将打包好的环境复制到离线机器

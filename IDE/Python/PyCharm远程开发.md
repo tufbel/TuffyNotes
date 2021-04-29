@@ -56,4 +56,3 @@
 <img src="https://raw.githubusercontent.com/tufbel/TImages/main/mark/20210114110458.png" alt="查看远程文件图2" style="zoom:67%;" />
 
 有时候，我们需要Pycharm自己创建一些文件夹用于同步和文件落地，可以打开创建空目录功能。操作入口是**Tools --> Deployment --> Options**选择下图的**Create empty directories**。
-

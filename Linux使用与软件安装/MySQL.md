@@ -1,12 +1,16 @@
 ## 1 安装MySQL
 
-### 1.1 安装5.7
+### 1.1 apt存储库安装5.7
 
 apt安装源中默认即为，可以直接使用安装命令安装MySQL5.7：
 
 ```powershell
 sudo apt-get install mysql-server
 ```
+
+### 1.2 yum安装
+
+
 
 ## 2 运行mysql
 
