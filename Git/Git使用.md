@@ -88,3 +88,13 @@ git commit --amend --reset-author # 设置了用户名后用于修正提交
 git reset HEAD # 丢弃暂存区更改到工作区
 git checkout -- <文件名> # 丢弃工作区文件修改
 ```
+
+### 2.3.5 diff
+
+```shell
+# 将某次commit变化的文件打包
+git diff-tree -r --no-commit-id --name-only [sha] | xargs tar -rf [name].tar
+# 将某节点到当前所有的变化打包
+git diff [sha] HEAD --name-only | xargs tar -rf [name].tar
+```
+
