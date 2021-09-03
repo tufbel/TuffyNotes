@@ -46,7 +46,7 @@ GRANT ALL
   WITH GRANT OPTION;
   
 # 删除账户
-DROP USER 'tuffy'@'%.example.com';
+DROP USER 'tuffy'@'%';
 
 # 最后效果
 mysql> select user,host from mysql.user;
@@ -59,6 +59,9 @@ mysql> select user,host from mysql.user;
 | mysql.sys        | localhost |
 | root             | localhost |
 +------------------+-----------+
+
+# 修改账户的密码
+mysql> set password for 'user'@'host' = password('新密码');
 ```
 
 ## 4 测试效果
@@ -79,3 +82,15 @@ bind-address = 127.0.0.1
 ```
 
 修改完成后就可以远程连接了。
+
+### 4.2 启动报错
+
+如果mysql启动时提示，这种情况一般出现在wsl的系统中。
+
+```shel
+No directory, logging in with HOME=/
+mkdir: cannot create directory ‘//.cache’: Permission denied
+-su: 19: /etc/profile.d/wsl-integration.sh: cannot create //.cache/wslu/integration: Directory nonexistent
+```
+
+将mysql停掉后，使用`sudo usermod -d /var/lib/mysql/ mysql`修改即可。

@@ -26,7 +26,7 @@ apt install redis-server
 
 ```shell
 wget https://download.redis.io/releases/redis-6.0.9.tar.gz # 以6.0.9版本为例，可按需更换
-tar xzf redis-6.0.9.tar.gz [-C /usr/loacl/]  # 解压 注意：此处解压位置即为redis的安装位置，建议`/usr/loacl/`目录
+tar -xzvf redis-6.0.9.tar.gz [-C /usr/loacl/]  # 解压 注意：此处解压位置即为redis的安装位置，建议`/usr/loacl/`目录
 cd redis-6.0.9 # 进入解压的目录
 ```
 
