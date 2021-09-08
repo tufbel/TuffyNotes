@@ -110,11 +110,11 @@ git diff [sha] HEAD --name-only | xargs tar -rf [name].tar
 git cherry-pick [options] <commit-id>...
 
 常用options:
+    -n, --no-commit       不自动提交
+    -e, --edit            编辑提交信息
     --quit                退出当前的chery-pick序列
     --continue            继续当前的chery-pick序列
     --abort               取消当前的chery-pick序列，恢复当前分支
-    -n, --no-commit       不自动提交
-    -e, --edit            编辑提交信息
 ```
 
 

@@ -18,6 +18,8 @@
 
 丨—— [Nginx](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/Nginx.md)
 
+丨—— [RabbitMQ](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/RabbitMQ.md)
+
 丨—— [Redis](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/Redis.md)
 
 丨—— [SELinux的安全加固](https://github.com/tufbel/TuffyNotes/blob/main/Linux使用与软件安装/SELinux的安全加固.md)

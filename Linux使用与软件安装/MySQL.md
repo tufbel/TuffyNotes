@@ -4,18 +4,20 @@
 
 apt安装源中默认即为，可以直接使用安装命令安装MySQL5.7：
 
-```powershell
+```shell
 sudo apt-get install mysql-server
 ```
 
 ### 1.2 yum安装
 
-
+```shell
+yum -y install mysql-community-server
+```
 
 ## 2 运行mysql
 
-```powershell
-#查看运行状态
+```shell
+#查看运行状态 Ubuntu
 sudo service mysql start
 sudo service mysql status
 ```
