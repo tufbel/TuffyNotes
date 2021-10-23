@@ -96,3 +96,27 @@ mkdir: cannot create directory ‘//.cache’: Permission denied
 ```
 
 将mysql停掉后，使用`sudo usermod -d /var/lib/mysql/ mysql`修改即可。
+
+## 5 数据库的导入导出
+
+### 5.1 dump导出
+
+```shell
+mysqldump -h[host] -P[port] -u[username] -p[password] [-t] database [--tables t1 t2 t3] [> path.sql] 
+```
+
+- -u：指定用户
+- -p：指定密码，一定不要有空格
+- -h：指定ip
+- -P：指定端口号
+- -t：只导出数据，不导出结构（无create）
+- --tables：导出指定表
+- `> path.sql`：导出到指定文件
+
+### 5.2 导入数据
+
+```shell
+mysql -h[host] -P[port] -u[username] -p[password] database < path.sql
+```
+
+参数基本与`mysqldump`一致，但是最后要使用`< path.sql`，而不再是`>`。
